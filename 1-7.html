@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 첫 번째 인자 숫자와 7대의 두 자리 숫자 중 끝의 자리 숫자가 일치하는 개수 카운팅 문제
+            function solution(day, arr){
+                let answer=0, count=0;
+                for(i=0; i<arr.length; i++) {
+                    if(arr[i] % 10 == day) count +=1;
+                }
+                answer = count;
+                return answer;
+            }
+            
+            arr=[12, 20, 54, 30, 87, 91, 30];
+            console.log(solution(0, arr));
+        </script>
+    </body>
+</html>
