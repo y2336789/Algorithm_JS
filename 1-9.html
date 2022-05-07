@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 문자열에서 A를 #으로 바꾸기
+            function solution(s){
+                let answer="";
+                for(let x of s) {
+                    if(x==='A') answer+='#';
+                    else answer+=x;
+                }
+                return answer;
+            }
+            let str="BANANA";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
+
+
