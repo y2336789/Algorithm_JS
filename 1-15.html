@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 문장에서 가운데 문자 출력, 길이가 짝수일 경우는 가운데 2개의 문자 출력
+            function solution(s){  
+                // s.substring() -> 사용해도 좋음
+                // s.substring(index, index+1) => 해당 인덱스부터 인덱스+1까지만 출력
+                let answer="", index;
+                if(s.length % 2 === 0){
+                    index = s.length/2;
+                    answer += s[index-1];
+                    answer += s[index];
+                }
+                else {
+                    index = Math.floor((s.length/2));
+                    answer += s[index];
+                }
+                return answer;
+            }
+            console.log(solution("length"));
+        </script>
+    </body>
+</html>

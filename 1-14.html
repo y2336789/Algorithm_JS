@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // N개의 문자열에서 가장 긴 문자열을 출력하는 프로그램
+            function solution(s){  
+                let answer="", maxlength = 0;
+                for(let x of s) {
+                    if(maxlength < x.length) {
+                        maxlength = x.length;
+                        answer = x;
+                    }
+                }
+                return answer;
+            }
+            let str=["teacher", "time", "student", "beautiful", "good"];
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
